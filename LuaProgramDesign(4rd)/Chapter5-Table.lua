@@ -1,0 +1,62 @@
+--5.1
+-- sunday = "monday";monday = "sunday"
+-- t = {
+--     sunday = "monday",
+--     [sunday] = monday
+-- }
+-- print(t.sunday,t[sunday],t[t.sunday])
+
+--5.2
+-- a = {}
+-- a.a=a
+-- a.a.a.a=3
+-- print(a)
+
+--5.3
+-- a = {
+--     ["Enter"] = "\n"
+-- }
+-- print(a.Enter)
+
+--5.4
+-- local function CalculatePolynomial(a,x)
+--     local result = 0
+--     x = x or 0
+--     if type(a) ~= "table" or #a <= 0 then
+--         return result
+--     end
+--     for i = 1, #a do
+--         result = result + a[i] * x^(i-1) --注意题目条件
+--     end
+--     return result
+-- end
+-- print(CalculatePolynomial({1,2,3},2))
+
+--5.5
+-- local function CalculatePolynomial(a,x)
+--     local result = 0
+--     x = x or 0
+--     if type(a) ~= "table" or #a <= 0 then
+--         return result
+--     end
+--     for i = 1, #a do
+--         result = result + a[i] * x^(i-1) --注意题目条件
+--     end
+--     return result
+-- end
+
+--5.6
+-- local function IsSequence(n)
+--     if type(n) ~= "table" then
+--         return false
+--     end
+--     local count = 0
+--     local size = #n
+--     for key, value in pairs(n) do
+--         count = count + 1
+--     end
+--     return count == size
+-- end
+-- print(IsSequence{1,2,3,4,6})
+
+--5.7
